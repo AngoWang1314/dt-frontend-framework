@@ -60,12 +60,12 @@ spinner.setSpinnerString('|/-\\');
 function pullDemoProject (framework_name, project_name) {
 	spinner.start();
 	const urls = {
-		'desktop': 'git@github.com:AngoWang1314/desktop.git',
-		'browser': 'git@github.com:AngoWang1314/browser.git',
-		'android': 'git@github.com:AngoWang1314/android.git',
-		'ios': 'git@github.com:AngoWang1314/ios.git',
-		'wap': 'git@github.com:AngoWang1314/wap.git',
-		'MiniProgram': 'git@github.com:AngoWang1314/MiniProgram.git'
+		'desktop': 'git@github.com:dt-frontend/desktop.git',
+		'browser': 'git@github.com:dt-frontend/browser.git',
+		'android': 'git@github.com:dt-frontend/android.git',
+		'ios': 'git@github.com:dt-frontend/ios.git',
+		'wap': 'git@github.com:dt-frontend/wap.git',
+		'MiniProgram': 'git@github.com:dt-frontend/MiniProgram.git'
 	};
 	cmd.get('git clone ' + urls[framework_name] + ' ' + framework_name + '/' + project_name, function (err, data, stderr) {
 		spinner.stop();
